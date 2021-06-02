@@ -2,7 +2,7 @@
 
 ```
 yarn
-yarn dev
+PORT=8000 yarn dev
 open http://localhost:8000
 ```
 

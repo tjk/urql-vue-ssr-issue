@@ -1,0 +1,28 @@
+{
+  "name": "urql-ssr-issue",
+  "private": true,
+  "version": "1.0.0",
+  "description": "URQL SSR issue repro",
+  "scripts": {
+    "dev": "NODE_OPTIONS=--max-old-space-size=8192 BROWSERSLIST_IGNORE_OLD_DATA=1 nodemon --watch server.js server"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@urql/vue": "^0.4.0",
+    "@vue/compiler-sfc": "^3.0.11",
+    "@vue/server-renderer": "^3.0.11",
+    "cross-fetch": "^3.0.6",
+    "express": "^4.17.1",
+    "graphql": "^14.5.8",
+    "lodash-es": "^4.17.11",
+    "morgan": "^1.10.0",
+    "vue": "^3.1.0-beta.6",
+    "vue-router": "^4.0.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.1.4",
+    "nodemon": "^1.18.10",
+    "pug": "^2.0.3",
+    "vite": "^2.3.0"
+  }
+}

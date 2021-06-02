@@ -2,7 +2,6 @@ import * as path from "path"
 
 import { defineConfig } from "vite"
 import vue from "@vitejs/plugin-vue"
-import { minify } from "html-minifier-terser"
 
 // https://vitejs.dev/config/
 const config = defineConfig({
@@ -13,13 +12,6 @@ const config = defineConfig({
         ssr: true,
       },
     }),
-    {
-      name: "process-index-html",
-      enforce: "post",
-      transformIndexHtml(html) {
-        return minify(html, { collapseWhitespace: true })
-      },
-    },
   ],
   resolve: {
     alias: {

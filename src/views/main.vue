@@ -1,5 +1,6 @@
 <template lang="pug">
 div
+  router-link(to="/other") other page
   div(v-for="pokemon in pokemons") {{pokemon.id}} {{pokemon.name}}
 </template>
 
